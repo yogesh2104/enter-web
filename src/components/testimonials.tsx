@@ -43,10 +43,10 @@ export default function Testimonials() {
         </p>
       </div>
 
-      <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 rounded-2xl mx-auto text-white p-4 sm:p-6 lg:p-8">
+      <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 md:rounded-2xl mx-auto text-white p-4 sm:p-6 lg:p-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-8 items-start mt-10">
           <div className="lg:col-span-1">
-            <Card className="p-6 text-center border dark:bg-[#FFFFFF0A]">
+            <Card className="p-6 text-center border shadow-none dark:border dark:bg-[#FFFFFF0A]">
               <CardContent className="p-0">
                 <div className="text-6xl font-bold text-foreground mb-4">{averageRating.toFixed(1)}</div>
                 <div className="flex justify-center gap-1 mb-4">

@@ -49,33 +49,34 @@ export default function HeroSection({
         />
       </div>
 
-      <div className="relative mx-auto pt-24 lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 text-center space-y-10">
+      <div className="absolute inset-0 flex items-center justify-center z-10 px-5 sm:px-10 md:px-12 lg:px-5">
+        <div className="text-center space-y-10 max-w-5xl">
           <div className="space-y-6">
-          <h1 className="text-white dark:text-white mx-auto max-w-5xl font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight">
+            <h1 className="text-white dark:text-white font-bold text-4xl/tight sm:text-5xl/tight lg:text-6xl/tight xl:text-7xl/tight">
               {title}
-          </h1>
-          <p className="text-white dark:text-gray-300 mx-auto max-w-xl text-lg lg:text-xl">{description}</p>
-          </div>
-
-          <div className="flex justify-center items-center flex-wrap mx-auto gap-4">
+            </h1>
+            <p className="text-white dark:text-gray-300 max-w-xl mx-auto text-lg lg:text-xl">{description}</p>
+            
+            <div className="flex justify-center items-center flex-wrap gap-4 pt-4">
               {buttons.map((button, index) => (
-                  <Link key={index} to={button.href} className={getButtonClasses(button.variant)}>
+                <Link key={index} to={button.href} className={getButtonClasses(button.variant)}>
                   {button.text}
-                  </Link>
+                </Link>
               ))}
+            </div>
           </div>
 
           <div className="text-left grid grid-cols-1 lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 border border-gray-100 dark:border-gray-800 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
-              {features.map((feature, index) => {
-                const Icon = feature.icon
-                const isMiddle = features.length === 3 && index === 1
-                const isLast = index === features.length - 1
+            {features.map((feature, index) => {
+              const Icon = feature.icon
+              const isMiddle = features.length === 3 && index === 1
+              const isLast = index === features.length - 1
 
-                return (
+              return (
                 <div
                   key={index}
                   className={`flex items-start gap-6 ${
-                  isMiddle ? "lg:px-6 py-6 lg:py-0" : isLast ? "pt-6 lg:pt-0 lg:pl-6" : "lg:pr-6 pb-6 lg:pb-0"
+                    isMiddle ? "lg:px-6 py-6 lg:py-0" : isLast ? "pt-6 lg:pt-0 lg:pl-6" : "lg:pr-6 pb-6 lg:pb-0"
                   }`}
                 >
                   <div className="w-10 flex-shrink-0">
@@ -89,8 +90,9 @@ export default function HeroSection({
                   </div>
                 </div>
               )
-              })}
+            })}
           </div>
+        </div>
       </div>
 
     </section>
