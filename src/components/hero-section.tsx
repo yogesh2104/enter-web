@@ -45,7 +45,7 @@ export default function HeroSection({
         <img
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa"
           alt="Tech Background"
-          className="w-full h-[80vh] md:h-[90vh] object-cover opacity-70 dark:opacity-40 rounded-2xl"
+          className="w-full h-[80vh] md:h-[90vh] object-cover dark:opacity-70 opacity-100 md:rounded-2xl"
         />
       </div>
 
@@ -65,7 +65,6 @@ export default function HeroSection({
               ))}
           </div>
 
-          {/* Features Grid */}
           <div className="text-left grid grid-cols-1 lg:grid-cols-3 p-6 rounded-2xl bg-gradient-to-tr from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 border border-gray-100 dark:border-gray-800 max-w-2xl lg:max-w-5xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
               {features.map((feature, index) => {
                 const Icon = feature.icon

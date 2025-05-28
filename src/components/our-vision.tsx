@@ -15,7 +15,7 @@ export const OurVision=()=>{
 
     return(
       <section className="mb-12 animate-fade-in-up">
-        <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 p-8 md:p-12 rounded-2xl shadow-sm text-center relative overflow-hidden">
+        <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 p-8 md:p-12 md:rounded-2xl shadow-sm text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-300/20 to-red-300/20 rounded-full -translate-y-16 translate-x-16 animate-float"></div>
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-red-300/20 to-orange-300/20 rounded-full translate-y-12 -translate-x-12 animate-float-delay"></div>
 

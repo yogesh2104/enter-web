@@ -117,8 +117,8 @@ export default function Testimonials() {
               </CarouselContent>
               <div className="flex items-center justify-end mt-2">
                 <div className="flex gap-2">
-                  <CarouselPrevious className="relative inset-0 translate-y-0 h-10 w-10" />
-                  <CarouselNext className="relative inset-0 translate-y-0 h-10 w-10" />
+                  <CarouselPrevious className="relative text-black dark:text-white inset-0 translate-y-0 h-10 w-10" />
+                  <CarouselNext className="relative inset-0 text-black dark:text-white translate-y-0 h-10 w-10" />
                 </div>
               </div>
             </Carousel>

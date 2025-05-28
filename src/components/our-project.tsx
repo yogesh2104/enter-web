@@ -6,7 +6,7 @@ import { siteInfo } from "@/lib/site-info"
 
 export const OurProject=()=>{
     return(
-        <section className="py-16 mb-10" id="project">
+        <section className="py-10 mb-10" id="project">
             <div className="text-center mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 max-w-4xl mx-auto leading-tight">
                     Featured Projects
@@ -18,7 +18,7 @@ export const OurProject=()=>{
 
             <Tabs defaultValue="all" className="w-full">
                 <div className="flex justify-center mb-8">
-                    <TabsList className="bg-slate-800">
+                    <TabsList className="bg-slate-800 hidden md:block">
                         <TabsTrigger value="all">All Projects</TabsTrigger>
                         <TabsTrigger value="web">Web Development</TabsTrigger>
                         <TabsTrigger value="cloud">Cloud Solutions</TabsTrigger>
@@ -26,11 +26,11 @@ export const OurProject=()=>{
                     </TabsList>
                 </div>
 
-                <TabsContent value="all" className="mt-0">
+                <TabsContent value="all" className="mt-0 p-2 md:p-0">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {siteInfo.project.allProject.map((project, index) => (
                         <Card key={index} className="py-0 bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 overflow-hidden group">
-                            <div className="relative h-48 overflow-hidden">
+                            <div className="relative h-60 overflow-hidden">
                             <img
                                 src={project.image || "/placeholder.svg"}
                                 alt={project.title}
@@ -40,12 +40,12 @@ export const OurProject=()=>{
                             </div>
                             <div className="p-5">
                             <div className="flex items-center gap-2 mb-2">
-                                <div className="w-6 h-6 rounded-full bg-slate-700 flex items-center justify-center">
+                                <div className="size-8 rounded-full text-primary flex items-center justify-center">
                                 {project.icon}
                                 </div>
-                                <span className="text-sm text-slate-400">{project.category}</span>
+                                <span className="text-sm dark:text-slate-400">{project.category}</span>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+                            <h3 className="text-xl font-bold text-black dark:text-white mb-2">{project.title}</h3>
                             <Link
                                 to="#"
                                 className="inline-flex items-center text-rose-500 hover:text-rose-400 text-sm font-medium"

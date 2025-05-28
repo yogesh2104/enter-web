@@ -210,37 +210,37 @@ export const siteInfo = {
           title: "E-Commerce Platform",
           category: "Web Development",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Code className="h-5 w-5" />,
+          icon: <Code className="h-5 w-5 text-primary" />,
         },
         {
           title: "Cloud Migration",
           category: "Cloud Solutions",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Server className="h-5 w-5" />,
+          icon: <Server className="h-5 w-5 text-primary" />,
         },
         {
           title: "Security Infrastructure",
           category: "Cybersecurity",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Shield className="h-5 w-5" />,
+          icon: <Shield className="h-5 w-5 text-primary" />,
         },
         {
           title: "Mobile Banking App",
           category: "Web Development",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Code className="h-5 w-5" />,
+          icon: <Code className="h-5 w-5 text-primary" />,
         },
         {
           title: "Data Analytics Dashboard",
           category: "Cloud Solutions",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Server className="h-5 w-5" />,
+          icon: <Server className="h-5 w-5 text-primary" />,
         },
         {
           title: "Threat Detection System",
           category: "Cybersecurity",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Shield className="h-5 w-5" />,
+          icon: <Shield className="h-5 w-5 text-primary" />,
         },
       ],
       web:[
@@ -248,13 +248,13 @@ export const siteInfo = {
           title: "E-Commerce Platform",
           category: "Web Development",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Code className="h-5 w-5" />,
+          icon: <Code className="h-5 w-5 text-primary" />,
         },
         {
           title: "Mobile Banking App",
           category: "Web Development",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Code className="h-5 w-5" />,
+          icon: <Code className="h-5 w-5 text-primary" />,
         },
       ],
       cloud:[
@@ -262,13 +262,13 @@ export const siteInfo = {
           title: "Cloud Migration",
           category: "Cloud Solutions",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Server className="h-5 w-5" />,
+          icon: <Server className="h-5 w-5 text-primary" />,
         },
         {
           title: "Data Analytics Dashboard",
           category: "Cloud Solutions",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Server className="h-5 w-5" />,
+          icon: <Server className="h-5 w-5 text-primary" />,
         },
       ],
       security:[
@@ -276,13 +276,13 @@ export const siteInfo = {
           title: "Security Infrastructure",
           category: "Cybersecurity",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Shield className="h-5 w-5" />,
+          icon: <Shield className="h-5 w-5 text-primary" />,
         },
         {
           title: "Threat Detection System",
           category: "Cybersecurity",
           image: "https://images.unsplash.com/photo-1521106139607-40628ec32fb8?auto=format&fit=crop&w=1006&h=720",
-          icon: <Shield className="h-5 w-5" />,
+          icon: <Shield className="h-5 w-5 text-primary" />,
         },
       ]
     },
@@ -293,27 +293,27 @@ export const siteInfo = {
       heading:'We combine expertise, innovation, and dedication to deliver exceptional results for your business.',
       data:[
         {
-          icon: <Users className="h-8 w-8 text-white" />,
+          icon: <Users className="h-6 w-6 text-white" />,
           title: "Client-Centered Approach",
           description:
             "We don't believe in one-size-fits-all. Our solutions are crafted around your business goals.",
           gradient: "from-teal-500 to-cyan-500",
         },
         {
-          icon: <ShieldCheck className="h-8 w-8 text-white" />,
+          icon: <ShieldCheck className="h-6 w-6 text-white" />,
           title: "Expertise You Can Trust",
           description:
             "Our team of certified developers, engineers, and security analysts brings years of hands-on experience to every project.",
           gradient: "from-blue-500 to-indigo-500",
         },
         {
-          icon: <MessageSquare className="h-8 w-8 text-white" />,
+          icon: <MessageSquare className="h-6 w-6 text-white" />,
           title: "Transparent Communication",
           description: "We keep you in the loop at every step, ensuring clarity, confidence, and collaboration.",
           gradient: "from-purple-500 to-pink-500",
         },
         {
-          icon: <Clock className="h-8 w-8 text-white" />,
+          icon: <Clock className="h-6 w-6 text-white" />,
           title: "Ongoing Support",
           description: "From launch to maintenance, we're with you every step of the way.",
           gradient: "from-orange-500 to-red-500",

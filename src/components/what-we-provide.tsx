@@ -106,8 +106,8 @@ export default function WhatWeProvide() {
             </div>
 
             <div className="w-full mb-10">
-                <div className="lg:hidden sticky top-0 z-50  ">
-                    <div className="flex overflow-x-auto space-x-2 scrollbar-hide p-3">
+                {/* <div className="lg:hidden sticky left-0 top-12 z-50  ">
+                    <div className="flex justify-center overflow-x-auto space-x-2 scrollbar-hide p-3">
                         {tabs.map((tab) => (
                             <button 
                                 key={tab.id}
@@ -123,7 +123,7 @@ export default function WhatWeProvide() {
                             </button>
                         ))}
                     </div>
-                </div>
+                </div> */}
 
                 <div 
                     ref={containerRef}
@@ -131,14 +131,14 @@ export default function WhatWeProvide() {
                 >
                     <div 
                         ref={stickyRef}
-                        className="hidden lg:block sticky top-20 md:top-10 z-40"
+                        className="hidden lg:block sticky top-32 md:top-10 z-40"
                     >
-                        <div className="rounded-2xl shadow-2xl">
+                        <div className="rounded-2xl dark:shadow-2xl border dark:border-0">
                             <div className="flex h-[82vh] min-h-[730px]">
-                                <div className="w-96 bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 p-4 flex flex-col border-r border-gray-800 rounded-l-2xl">
+                                <div className="w-96 bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 p-4 flex flex-col border-r dart:border-gray-800 rounded-l-2xl">
                                     <div className="mb-6">
                                     
-                                        <div className="flex flex-col space-y-2 bg-gray-800/50 rounded-lg p-3">
+                                        <div className="flex flex-col space-y-2 bg-gray-400/30 rounded-lg p-3">
                                             {tabs.map((tab) => (
                                                 <button 
                                                     key={tab.id}
@@ -146,7 +146,7 @@ export default function WhatWeProvide() {
                                                     className={`px-4 py-3 text-sm font-medium rounded-lg transition-all duration-300 text-left ${
                                                         activeTab === tab.id 
                                                             ? "bg-primary text-white shadow-lg transform scale-[1.02]" 
-                                                            : "text-gray-300 hover:text-white hover:bg-gray-700/50"
+                                                            : "dark:text-gray-300 hover:text-white hover:bg-gray-700/50"
                                                     }`}
                                                 >
                                                     {tab.label}
@@ -158,17 +158,17 @@ export default function WhatWeProvide() {
 
                                     {/* Features List */}
                                     <div className="flex-1 overflow-y-auto">
-                                        <h3 className="text-lg font-semibold text-white mb-3">What's Included:</h3>
+                                        <h3 className="text-lg font-semibold dark:text-white mb-3">What's Included:</h3>
                                         <div className="space-y-2">
                                             {currentData.features.map((feature, index) => (
                                                 <div
                                                     key={`${activeTab}-${index}`}
-                                                    className="flex items-start space-x-3 p-3 rounded-lg bg-gray-800/30 hover:bg-gray-700/30 transition-all duration-300"
+                                                    className="flex items-start space-x-3 p-3 rounded-lg bg-gray-400/30 hover:bg-gray-700/30 transition-all duration-300"
                                                 >
                                                     <div className="flex-shrink-0 w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-0.5">
                                                         <Check className="w-3 h-3 text-white dark:text-black" />
                                                     </div>
-                                                    <span className="text-gray-300 leading-relaxed text-sm">{feature}</span>
+                                                    <span className="dark:text-gray-300 leading-relaxed text-sm">{feature}</span>
                                                 </div>
                                             ))}
                                         </div>
@@ -205,7 +205,7 @@ export default function WhatWeProvide() {
                         {tabs.map((tab) => (
                             <div 
                                 key={tab.id}
-                                className="min-h-screen p-6 border-b border-gray-700 last:border-b-0 bg-gray-900/50"
+                                className="h-full md:min-h-screen p-6 md:border-b border-gray-700 last:border-b-0 bg-gradient-to-br from-orange-50 to-red-50 dark:from-slate-900/50 dark:to-red-950/20 md:rounded-2xl"
                             >
                                 <div className="mb-6">
                                     <img 
@@ -216,16 +216,16 @@ export default function WhatWeProvide() {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <h4 className="text-lg font-semibold text-white mb-3">What's Included:</h4>
+                                    <h4 className="text-lg font-semibold text-black dark:text-white  mb-3">What's Included:</h4>
                                     {campaignData[tab.id].features.map((feature, featureIndex) => (
                                         <div
                                             key={featureIndex}
-                                            className="flex items-start space-x-3 p-3 rounded-lg bg-gray-800/50"
+                                            className="flex items-start space-x-3 p-3 rounded-lg bg-gray-400/20"
                                         >
-                                            <div className="flex-shrink-0 w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center mt-0.5">
+                                            <div className="flex-shrink-0 w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-0.5">
                                                 <Check className="w-3 h-3 text-white" />
                                             </div>
-                                            <span className="text-gray-300 leading-relaxed text-sm">{feature}</span>
+                                            <span className="text-black leading-relaxed text-md">{feature}</span>
                                         </div>
                                     ))}
                                 </div>
