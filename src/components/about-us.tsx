@@ -1,10 +1,5 @@
 import {
-  Users,
-  MessageSquare,
-  ShieldCheck,
-  Clock,
   ArrowRight,
-  Sparkles,
 } from "lucide-react"
 import { siteInfo } from "@/lib/site-info"
 export default function AboutUs() {

@@ -202,7 +202,7 @@ export default function WhatWeProvide() {
                         ))}
                     </div>
                     <div className="lg:hidden">
-                        {tabs.map((tab, index) => (
+                        {tabs.map((tab) => (
                             <div 
                                 key={tab.id}
                                 className="min-h-screen p-6 border-b border-gray-700 last:border-b-0 bg-gray-900/50"

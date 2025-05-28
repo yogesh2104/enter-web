@@ -1,10 +1,5 @@
-import { useState } from "react";
 import {
-  motion,
-  useTransform,
-  AnimatePresence,
   useMotionValue,
-  useSpring,
 } from "framer-motion";
 
 export const AnimatedTooltip = ({
@@ -26,7 +21,7 @@ export const AnimatedTooltip = ({
 
   return (
     <>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <div
           className="group relative -mr-4"
           key={item.name}
